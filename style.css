@@ -71,3 +71,6 @@ body {
 .form-container button:hover {
     background-color: #5a76d4;
 }
+p{
+    margin-top: 20px;
+}
