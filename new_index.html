@@ -91,7 +91,7 @@
                                 event.stopPropagation();
                             } else {
                                 event.preventDefault();
-                                // Fetch input values
+                                //input values
                                 const firstName = document.getElementById('firstName').value;
                                 const lastName = document.getElementById('lastName').value;
                                 const phone = document.getElementById('phone').value;
@@ -99,8 +99,17 @@
                                 const address = document.getElementById('address').value;
                                 const gender = document.querySelector('input[name="gender"]:checked').value;
                                 const dob = document.getElementById('dob').value;
+                                
+                                //console k liye
+                                console.log("First Name:", firstName);
+                                console.log("Last Name:", lastName);
+                                console.log("Phone Number:", phone);
+                                console.log("Employee ID:", employeeId);
+                                console.log("Address:", address);
+                                console.log("Gender:", gender);
+                                console.log("Date of Birth:", dob);
 
-                                // Display the collected data
+                                // Display data
                                 const displayArea = document.getElementById('displayData');
                                 displayArea.innerHTML = `
                                     <h3>Employee Information</h3>
@@ -118,67 +127,6 @@
                         }, false);
                     });
             })();
-
-
-        // (function () {
-        //         'use strict'
-        //         var forms = document.querySelectorAll('.needs-validation');
-        //         Array.prototype.slice.call(forms)
-        //             .forEach(function (form) {
-        //                 form.addEventListener('submit', function (event) {
-        //                     if (!form.checkValidity()) {
-        //                         event.preventDefault();
-        //                         event.stopPropagation();
-        //                     }
-        //                     form.classList.add('was-validated');
-        //                 }, false);
-        //             });
-        //     })();
-
-
-        // document.getElementById('submitBtn').addEventListener('submit', function(e) {
-        //     const form= e.target;
-
-        //     if (!form.checkValidity()){
-        //         e.preventDefault();
-        //         e.stopPropagation();
-        //     }
-
-        //     else{
-        //     e.preventDefault();
-        //          //constants bnaye
-        //     const firstName = document.getElementById('firstName').value;
-        //     const lastName = document.getElementById('lastName').value;
-        //     const phone = document.getElementById('phone').value;
-        //     const employeeId = document.getElementById('employeeId').value;
-        //     const address = document.getElementById('address').value;
-        //     const gender = document.querySelector('input[name="gender"]:checked').value;
-        //     const dob = document.getElementById('dob').value;
-        //     //console k liye
-        //     console.log("First Name:", firstName);
-        //     console.log("Last Name:", lastName);
-        //     console.log("Phone Number:", phone);
-        //     console.log("Employee ID:", employeeId);
-        //     console.log("Address:", address);
-        //     console.log("Gender:", gender);
-        //     console.log("Date of Birth:", dob);
-
-        //     //details bad m show ho uske liye
-        //     const displayArea = document.getElementById('displayData');
-        //     displayArea.innerHTML = `
-        //         <h3>Employee Information</h3>
-        //         <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-        //         <p><strong>Phone Number:</strong> ${phone}</p>
-        //         <p><strong>Employee ID:</strong> ${employeeId}</p>
-        //         <p><strong>Address:</strong> ${address}</p>
-        //         <p><strong>Gender:</strong> ${gender}</p>
-        //         <p><strong>Date of Birth:</strong> ${dob}</p>
-        //         `;
-        //         displayArea.style.display = "block"; 
-        //         document.getElementById('userDetailsForm').style.display = "none"; 
-        //     }
-            
-        // });
     </script>
 </body>
 </html>
